@@ -1,5 +1,8 @@
 # azure_databricks
 
+## Useful resources
+- [Spark Data Operations](https://github.com/patilvijay23/MLinPython/blob/main/pyspark/2_Spark_data_ops.ipynb): Showcases code snippets for the frequently used data operations on Spark dataframes
+
 ## Concepts
 - **Types of API**:
     - RDD: Can work with both structured and unstructured data. Fairly low-level e.g. need to collect() the RDD to collect the data to the driver before you can print anything, less efficient too
