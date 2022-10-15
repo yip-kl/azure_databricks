@@ -11,6 +11,8 @@
 - **Entry point**:
     - SparkContext: Use RDD API only. Initialized by default as `sc` so you can do things like `sc.textFile(inputUri)` from the get go
     - SparkSession: Can use all the APIs. Initialized by default as `spark`
+- **File interaction**:
+    - Spark works on HDFS, if we want to read a file on the local file system, the file must also be accessible at the same path on worker nodes, meaning either to copy the file to all workers or use a network-mounted shared file system. That's why reading the files from GCS is preferrable
 
 ## Tips
 Assuming the data concerned is a DataFrame
